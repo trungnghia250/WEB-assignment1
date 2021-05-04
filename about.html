@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo-hcmga.jpg" type="image/ico">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <title>About</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light fixed-top navbar-expand-md" id="myScrollspy">
+        <div class="container">
+            <button type="button" id="navbar-toggler" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="background-color: white;">
+                ☰
+            </button>
+            <a class="navbar-brand nav-link" href="index.html"><img style="height: 30px; border-radius: 50%; margin-right: 5px;" alt="" src="logo-hcmga.jpg">Chi hội đá quý HCM</a>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">Về chúng tôi</a>
+                    </li>
+
+                    <li class="dropdown nav-item news_dropdown1">
+                        <a href="#news" class="dropdown-toggle nav-link" data-hover="dropdown" role="button" aria-expanded="false">
+                            Tin Tức &amp; Sự Kiện <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdownhover-bottom" role="menu" id="news_ul">
+                            <li class="dropdown-item"><a href="#">Tin trong nước</a></li>
+                            <li class="dropdown-item"><a href="#">Tin thế giới</a></li>
+                            <li class="dropdown-item"><a href="#">Tin chính trị</a></li>
+                            <li class="dropdown-item"><a href="#">Tin xã hội</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Phan Kien Thuc -->
+                    <li class="dropdown nav-item news_dropdown1">
+                        <a href="#research" class="dropdown-toggle nav-link" data-hover="dropdown" role="button" aria-expanded="false">
+                            Kiến thức <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdownhover-bottom" role="menu" id="research_ul">
+                            <li class="dropdown-item"><a href="#">Đá quý</a></li>
+                            <li class="dropdown-item"><a href="#">Đá bán quý</a></li>
+                            <li class="dropdown-item"><a href="#">Đá ngọc</a></li>
+                            <li class="dropdown-item"><a href="#">Đá phong thuỷ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown nav-item news_dropdown1">
+                        <a href="#product" class="dropdown-toggle nav-link" data-hover="dropdown" role="button" aria-expanded="false">
+                            Bộ sưu tập <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdownhover-bottom" role="menu" id="product_ul">
+                            <li class="dropdown-item"><a href="#">Đá quý</a></li>
+                            <li class="dropdown-item"><a href="#">Đá bán quý</a></li>
+                            <li class="dropdown-item"><a href="#">Tinh thể</a></li>
+                            <li class="dropdown-item"><a href="#">Điêu khắc</a></li>
+                            <li class="dropdown-item"><a href="#">Trang sức</a></li>
+                            <li class="dropdown-item"><a href="#">Khác</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown nav-item news_dropdown1">
+                        <a href="#member" class="dropdown-toggle nav-link" data-hover="dropdown" role="button" aria-expanded="false">
+                            Thành viên <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdownhover-bottom" role="menu" id="member_ul">
+                            <li class="dropdown-item"><a href="#login">Đăng nhập</a></li>
+                            <li class="dropdown-item"><a href="#signup">Đăng ký</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+        $(function() {
+            var navbar = $(".navbar");
+            var navDropdown = $(".dropdown-menu");
+
+            $(window).scroll(function() {
+                if ($(window).scrollTop() <= 40) {
+                    if (!$(".navbar-collapse").hasClass("show")) {
+                        navbar.removeClass("navbar-scroll");
+                        navDropdown.removeClass("nav-dropdown-scroll");
+                        $(".top").hide();
+                    }
+                } else {
+                    navbar.addClass("navbar-scroll");
+                    navDropdown.addClass("nav-dropdown-scroll");
+                    $(".top").show();
+                }
+            });
+            $(".navbar-toggler").click(function() {
+                if ($(window).scrollTop() <= 40) {
+                    navbar.addClass("navbar-scroll");
+                }
+            });
+        });
+    </script>
+
+    <!-- Swiper -->
+    <div class="swiper-container-2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="carouselContainer">
+                    <img src="about.jpg" alt="">
+                    <div class="jumbotron jumbotron-fluid">
+                        <h1 class="display-4">Giới thiệu</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container about-ctn">
+        <div class="about-heading mb-5">
+            <p>Chi Hội Đá Quý Thành Phố Hồ Chí Minh</p>
+            <h2>Ho Chi Minh Gemstones Association - HCMGA</h2>
+        </div>
+
+        <section class="about">
+            <div class="row three-cards">
+                <h3 class="d-block">Tổng quan</h3>
+                <p class="text-justify">
+                    Ngày 30/1/2016, Chi Hội Đá Quý TPHCM đã tổ chức đại hội, chính thức ra mắt tại TPHCM.<br><br> Sài Gòn – TP HCM là trung tâm kinh kế lớn nhất nước, là nơi có ngành đá quý và trang sức rất phát triển. Vì vậy việc thành lập một tổ chức
+                    hiệp hội để phát triển nghề nghiệp, thúc đẩy ngành đá quý tại TP HCM là rất cần thiết. Nhắm đáp ứng nguyện vọng trên, Chi Hội Đá quý tại TPHCM (CHĐQ) đã ra đời với mong muốn tạo một “sân chơi” để những người chung ngành nghề, sở thích
+                    có thể giao lưu họp mặt và giúp đỡ lẫn nhau.
+                </p>
+            </div>
+            <div class="row three-cards">
+                <h3>Tôn chỉ mục đích</h3>
+                <p class="text-justify">
+                    Chi hội đá quý Thành phố Hồ Chí Minh (sau đây gọi là Chi hội) là một tổ chức xã hội- nghề nghiệp tự nguyện của các tổ chức, cá nhân Việt Nam hoạt động trong lĩnh vực Đá quý cùng đoàn kết, giúp đỡ nhau duy trì, phát triển, nâng cao trình độ chuyên môn,
+                    kỹ năng, kỹ xảo về Đá quý; giữ gìn phẩm chất và đạo đức nghề nghiệp; tiếp thu và truyền bá công nghệ mới góp phần khôi phục và phát triển ngành Đá quý ở tỉnh Hồ Chí Minh, bảo vệ lợi ích quốc gia và quyền lợi hợp pháp của hội viên;
+                </p>
+                <p class="text-justify">
+                    Chi hội Đá quý thành phố Hồ Chí Minh là thành viên của Hội Đá Quý Việt Nam, dưới sự chỉ đạo trực tiếp của Hội Đá quý Việt Nam, được tổ chức theo nguyên tắc tập trung dân chủ, hoạt động theo pháp luật của Nhà nước,Quy chế của Chi hội và không trái với
+                    Điều lệ của Hội Đá Quý Việt Nam.
+                </p>
+            </div>
+
+            <div class="row three-cards">
+                <h3>Phạm vi hoạt động</h3>
+                <p class="text-justify">
+                    Chi hội Đá quý thành phố Hồ Chí Minh hoạt động trên phạm vi tỉnh Hồ Chí Minh và một số tỉnh xung quanh, có trụ sở tại số nhà 15 Nguyễn Tuân, Phường 3, Quận Gò Vấp, Thành phố Hồ Chí Minh. Chi Hội có tư cách pháp nhân, có tài khoản riêng.
+                </p>
+                <p>
+                    Chi hội có thể thành lập chi nhánh hoặc văn phòng đại diện tại một số địa phương trong TP. HCM theo quy định của pháp luật.
+                </p>
+            </div>
+
+            <div class="row three-cards">
+                <h3>Sơ đồ tổ chức Chi hội</h3>
+                <ul>
+                    <li>Chủ tịch chi hội – ông Trần Anh Tuấn</li>
+                    <li>Phó chủ tịch chi hội – ông Nguyễn Văn Trung: phụ trách phong trào phát triển hội viên.</li>
+                    <li>Phó chủ tịch chi hội – ông Ngô Đức Tiến: phụ trách Kinh tế, kỹ thuật.</li>
+                    <li>Phó chủ tịch chi hội – ông Ngô văn Hoàng: phụ trách thi đua, khen thưởng.</li>
+                    <li>Trưởng ban kiểm sát – ông Nguyễn Văn Hải.</li>
+                    <li>Thư ký: bà Trần Hồng Thúy.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col-xl-12 google-map" style="text-align: center;">
+                <h3 class="title">Văn phòng Chi hội</h3>
+
+                <div id="map" style="position: relative; overflow: hidden;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4945995049698!2d106.65843061499122!3d10.773379562195451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec3c161a3fb%3A0xef77cd47a1cc691e!2sHo%20Chi%20Minh%20City%20University%20of%20Technology!5e0!3m2!1sen!2s!4v1606630788181!5m2!1sen!2s"
+                        width="800" height="600" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 item text">
+                        <h3>CHI HỘI ĐÁ QUÝ HCM</h3>
+                        <p style="font-size: small;" class="text-justify">
+                            Chi Hội Đá Quý Thành Phố Hồ Chí Minh (HCMGA) trực thuộc Hội Đá Quý Việt Nam và Tổng Hội Địa Chất Việt Nam. Được thành lập vào ngày 30/01/2016. Với mong muốn tạo một sân chơi lành mạnh để những người chung ngành nghề, sở thích có thể giao lưu họp mặt và
+                            giúp đỡ lẫn nhau, thúc đẩy ngành đá quý phát triển.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-3 item">
+                        <h3>Liên kết</h3>
+                        <ul>
+                            <li><a href="about.html">Về chúng tôi</a></li>
+                            <li><a href="#news">Tin Tức và Sự Kiện</a></li>
+                            <li><a href="listing.html">Thông tin sản phẩm và bảng giá</a></li>
+                            <li><a href="contact.html">Liên Hệ</a></li>
+                            <li><a href="index.html">Trang chủ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 item text">
+                        <h3><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Địa chỉ</h3>
+                        <p style="font-size: small;"><a style="text-decoration: none; color: white" href="#" target="_blank">Số 2 Nguyễn Bỉnh Khiêm, phường Bến Nghé, Quận 1</a></p>
+
+                        <h3 style="margin-top: 10px;"><i class="far fa-envelope"></i>&nbsp;&nbsp;Email</h3>
+                        <p style="font-size: small;"><a style="text-decoration: none; color: white" href="#">company@mail.com.vn</a></p>
+
+                        <h3 style="margin-top: 10px;"><i class="far fa-envelope"></i>&nbsp;&nbsp;Điện thoại</h3>
+                        <p style="font-size: small;"><a style="text-decoration: none; color: white" href="#">0123.456.789</a></p>
+                    </div>
+                    <div class="col item social">
+                        <a href="#"><i class="icon ion-social-facebook"></i></a>
+                        <a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <a href="#"><i class="icon ion-social-twitter"></i></a>
+                        <a href="#"><i class="icon ion-social-linkedin"></i></a>
+                        <a href="#"><i class="icon ion-social-youtube"></i></a>
+                        <a href="#"><i class="icon ion-social-google"></i></a>
+                        <a href="#"><i class="icon ion-social-reddit"></i></a>
+                        <a href="#"><i class="icon ion-social-twitch"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/bootstrap-dropdownhover.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

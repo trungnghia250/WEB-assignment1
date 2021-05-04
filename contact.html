@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us - GEM</title>
+    <link rel="icon" type="image/png" href="./assets/logo/gem1.png" />
+    <link rel="stylesheet" href="./assets/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="./assets/contact/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+  </head>
+  <body>
+    <!-- Jumbotron -->
+    <section class="hero is-fullheight" id="jumbotron">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <!-- Navbar -->
+        <nav class="navbar is-dark" id="navbar">
+          <div class="navbar-brand">
+            <a class="navbar-item animoDoubleDashed" href="index.html">
+              <img 
+                src="./assets/logo/gem1.png"
+                alt="Based on Bulma"
+                width="28"
+                height="28"
+              />   HCMGA
+            </a>
+            <div
+              class="navbar-burger burger"
+              data-target="navbarExampleTransparentExample"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item animoDoubleDashed" href="./index.html"> 
+                Trang chủ
+              </a>
+              <a class="navbar-item animoDoubleDashed" href="./about.html">
+                Giới thiệu
+              </a>
+              <a class="navbar-item animoDoubleDashed" href="./listing.html">
+                Bảng giá
+              </a>
+              <a class="navbar-item animoDoubleDashed" href="#">
+                Thông tin
+              </a>
+            </div>
+            <div class="navbar-end">
+              <a class="navbar-item email" href="#">
+                <span class="icon" style="margin-right: 10px; width: 20px">
+                  <img src="assets/contact/img/mail.svg" alt="" />
+                </span>
+                <span style="font-style: italic; font-size: 0.9em">cuong.mai@hcmut.edu.vn</span>
+              </a>
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="button is-outlined" href="contact.html">
+                      <span class="icon">
+                        <img src="assets/contact/img/phone.svg" alt="" style="width: 15px;"/>
+                      </span>
+                      <span>Liên Hệ</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Liên Hệ
+          </h1>
+          <h2 class="subtitle">
+            Trang Chủ &nbsp;  / &nbsp; Liên Hệ
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" style="padding-top: 100px;">
+      <div class="columns contact-info">
+        <div class="column contact-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <h4>Văn phòng</h4>
+          <p>Lý Thường Kiệt, Quận 10, Hồ Chí Minh </p>
+        </div>
+        <div class="column contact-info-item">
+          <i class="fas fa-phone-alt"></i>
+          <h4>Liên hệ trực tiếp</h4>
+          <p><strong>Phone : </strong> +0391 321 123</p>
+          <p><strong>Email : </strong> gemstore@mail.com</p>
+          <p><strong>Website : </strong> www.gemstore.com</p>
+        </div>
+        <div class="column contact-info-item">
+          <i class="fas fa-business-time"></i>
+          <h4>Ngày làm viêc</h4>
+          <p><strong>Chủ Nhật : </strong> Nghỉ</p>
+          <p><strong>Thứ hai - Thứ sáu : </strong>10AM - 8PM</p>
+          <p><strong>Thứ bảy : </strong>10AM - 2PM</p>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column write-message">
+          <h1 class="title" style="text-align: center;">Liên hệ với chúng tôi</h1>
+
+          <div class="field">
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" type="text" placeholder="Your name here" value="">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" type="email" placeholder="Email here" value="">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+          
+          <div class="field">
+            <div class="control">
+              <textarea class="textarea is-success input" rows="10" placeholder="Your message"></textarea>
+            </div>
+          </div>
+          
+          <div class="field">
+            <div class="control submit-button">
+              <button class="button is-link">Gửi tin nhắn</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column google-map" style="text-align: center;">
+          <h1 class="title">Địa điểm</h1>
+
+          <div id="map" ></div>
+
+          
+        </div>
+      </div>
+
+    </div>
+
+
+    <footer class="footer has-background-white-ter" id="my-footer">
+      <div class="content has-text-centered has-text-white">
+        <div class="columns is-offset-1">
+          <div class="column">
+            <a href="#" class="footer-logo animoBorderLeftRight">
+              <img
+                src="./assets/logo/gem2.png"
+                alt="Bulma: a modern CSS framework based on Flexbox"
+                width="112"
+                height="28"
+              />
+            </a>
+            <p class="has-text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="column">
+            <h6>Tìm kiếm nhiều</h6>
+            <ul>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Thông tin sản phẩm</a>
+              </li>
+              <li>
+                <a href="#" class="animoBorderLeftRight"> Đánh giá tốt</a>
+              </li> 
+              <li>
+                <a href="#" class="animoBorderLeftRight">Sản phẩm mua nhiều</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h6>Liên hệ nhanh</h6>
+            <ul>
+              <li><a href="#" class="animoBorderLeftRight">Giới thiệu</a></li>
+              <li><a href="#" class="animoBorderLeftRight">Liên hệ</a></li>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Chính sách</a>
+              </li>
+              <li><a href="#" class="animoBorderLeftRight">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h6>Đăng Kí</h6>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-medium" type="email" placeholder="Email" />
+              <span class="icon is-left">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </div>
+            <button class="animoPulse">
+              <span>Đăng Kí</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/contact/js/swiper.min.js"></script>
+    <script src="./assets/contact/js/jquery.min.js"></script>
+    <script src="./assets/contact/js/scripts.js"></script>
+    <script src="./assets/contact/js/map_api.js"></script>
+  </body>
+</html>

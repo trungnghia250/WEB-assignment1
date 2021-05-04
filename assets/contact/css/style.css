@@ -1,0 +1,323 @@
+body,
+html {
+  height: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Phần Navbar chung với hero */
+
+.hero.is-fullheight {
+  min-height: 50vh;
+}
+
+.navbar {
+
+position: fixed;
+  top: 0;
+  width: 100%;
+  /* display: block; */
+  transition: top 0.5s, background-color 0.7s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0px 15vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    padding: 0px;
+  }
+}
+
+a.navbar-item:hover {
+  background-color: transparent !important;
+}
+
+.animoDoubleDashed {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.animoDoubleDashed::after,
+.animoDoubleDashed::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #7938f1;
+  transition: transform 0.2s ease-in-out;
+}
+.animoDoubleDashed::before {
+  top: 0;
+  transform: translateX(-100%);
+}
+.animoDoubleDashed::after {
+  bottom: 0;
+  transform: translateX(100%);
+}
+.animoDoubleDashed:hover::after,
+.animoDoubleDashed:hover::before {
+  transform: translateX(0);
+}
+.animoDoubleDashed:hover {
+  color: #f3f160 !important;
+}
+
+.navbar-item .button {
+  color: white;
+  background-color: transparent;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.navbar-item .button:hover {
+  background-color: #7938f1;
+  border: 1px solid #7938f1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar-item.email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navbar-item.email img {
+    /* line-height: 44px; */
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+
+  .navbar-item .button {
+    color: white;
+    background-color: #7938f1;
+    transition: background-color 0.3s, border 0.3s;
+  }
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+.hero-body {
+  padding: 0px;
+  overflow: hidden;
+  background: url(../img/hero/hero_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.hero-body .title {
+  color: white;
+  font-weight: 600;
+}
+
+.hero-body .subtitle {
+  padding-top: 20px;
+  color: white;
+  font-size: 0.9em;
+}
+
+/* Kết thúc phần navbar */
+
+/* Contact info */
+
+.contact-info-item {
+  text-align: center;
+  padding: 10px 56px;
+  color: #888;
+}
+
+.contact-info-item h4 {
+  line-height: 1.1;
+  margin: 10px 0;
+  font-size: 20px;
+  color: #222222;
+  font-weight: 700;
+}
+
+.contact-info-item strong {
+  color: #888;
+}
+
+.contact-info-item i {
+  font-size: 25px;
+  color: #7938f1;
+}
+
+/* Write message */
+
+.write-message {
+  padding: 100px 20px 20px 20px;
+}
+
+.is-success.input {
+  border-color: #7938f1 !important;
+}
+
+.is-success.input:focus {
+  border-color: #fa6742 !important;
+  box-shadow: 0 0.0625em 0.125em rgba(10, 10, 10, 0.219);
+}
+
+.submit-button {
+  text-align: center;
+}
+
+.button.is-link {
+  background-color: #7938f1;
+  transition: all 0.2s ease-in-out;
+}
+
+.button.is-link:hover {
+  background-color: #fa6742;
+}
+
+/* Google map */
+
+.google-map {
+  padding: 100px 20px 20px 20px;
+}
+
+#map {
+  width: 100%;
+  height: 367px;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 100px;
+  border-top: 1px solid #eee;
+}
+
+.footer .content ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer .has-text-center {
+  margin-top: 10px;
+  color: #555555;
+  font-size: 15px;
+}
+
+.footer .content ul li {
+  list-style-type: none;
+  text-align: center;
+  padding: 5px;
+}
+.footer .content ul li a {
+  color: #6e6e6e;
+  font-size: 14px;
+}
+.content ul li a:hover {
+  color: #2e2e2e;
+}
+.footer h6 {
+  text-align: center;
+  color: #555555 !important;
+  font-size: 20px !important;
+  margin-bottom: 25px !important;
+}
+.footer .button {
+  margin-top: 15px;
+}
+.footer .fa {
+  padding-right: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.footer .control.has-icons-left .icon.is-left {
+  left: 5px;
+}
+.footer p {
+  font-size: 18px;
+}
+.footer .is-success:hover {
+  background: #0f8438 !important;
+}
+
+.animoBorderLeftRight {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.animoBorderLeftRight::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #7938f1;
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.animoBorderLeftRight:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.animoPulse {
+  margin-top: 10px;
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: #fff;
+  padding: 0.5em 1em;
+  outline: 0;
+  border: none;
+  background-color: #7938f1;
+}
+.animoPulse:hover {
+  cursor: pointer;
+}
+.animoPulse::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 4px solid #7938f1;
+  transform-origin: center;
+  transform: scale(1);
+}
+.animoPulse:hover::before {
+  transition: all 0.75s ease-in-out;
+  transform-origin: center;
+  transform: scale(1.75);
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .footer .bottom p,
+  .footer .has-text-right {
+    text-align: center !important;
+  }
+}
+
+/* Kết thúc footer */

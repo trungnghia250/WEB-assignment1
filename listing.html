@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product and Price</title>
+    <link rel="icon" type="image/png" href="./assets/logo/gem1.png" />
+    <link rel="stylesheet" href="./assets/css/bulma.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.css"
+    />
+    <link rel="stylesheet" href="./assets/listings/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+  </head>
+  <body>
+    <!-- Jumbotron -->
+    <section class="hero is-fullheight" id="jumbotron">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <!-- Navbar -->
+        <nav class="navbar is-dark" id="navbar">
+          <div class="navbar-brand">
+            <a class="navbar-item animoDoubleDashed" href="index.html">
+              <img 
+                src="./assets/logo/gem1.png"
+                alt="Based on Bulma"
+                width="28"
+                height="28"
+              />GEMSTONE STORE
+            </a>
+            <div
+              class="navbar-burger burger"
+              data-target="navbarExampleTransparentExample"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item animoDoubleDashed" href="index.html"> 
+                Trang chủ
+              </a>
+              <a class="navbar-item animoDoubleDashed" href="about.html">
+                Giới thiệu
+              </a>
+              <a class="navbar-item animoDoubleDashed" href="listings.html">
+                Bảng giá
+              </a>
+              <a class="navbar-item animoDoubleDashed" href="about.html">
+                Thông tin
+              </a>
+                <a class="navbar-item animoDoubleDashed" href="contact.html">
+                Liên hệ
+              </a>
+            </div>
+
+            <div class="navbar-end">
+              <a class="navbar-item email" href="#">
+                <span class="icon" style="margin-right: 10px; width: 20px;">
+                  <img src="assets/listings/img/mail.svg" alt="" />
+                </span>
+                <span style="font-style: italic; font-size: 0.9em;"
+                  >mai.cuong@hcmut.edu.vn</span
+                >
+              </a>
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="button is-outlined" href="contact.html">
+                      <span class="icon">
+                        <img
+                          src="assets/listings/img/phone.svg"
+                          alt=""
+                          style="width: 15px;"
+                        />
+                      </span>
+                      <span>LIÊN HỆ</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Thông tin sản phẩm
+          </h1>
+          <h2 class="subtitle">
+            Trang chủ &nbsp; / &nbsp; Thông tin sản phẩm
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phần listings -->
+
+    <div class="container">
+      <div class="columns view-details">
+        <div class="column is-3">
+          <div class="item-view-mode res-box">
+            <ul class="nav item-filter-list" role="tablist">
+              <li>
+                <a data-toggle="tab" href="#" style="color: #333333;"
+                  ><i class="fas fa-th"></i
+                ></a>
+              </li>
+              <li>
+                <a class="active" data-toggle="tab" href="#"
+                  ><i class="fas fa-list"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="select">
+            <select>
+              <option>Mới nhất</option>
+              <option>Nổi bật</option>
+              <option>Giá(từ cao đến thấp)</option>
+              <option>Giá (từ thấp lên cao)</option>
+            </select>
+          </div>
+        </div>
+        <div class="column is-5 count-showing">
+          <div class="item-element res-box text-right sm-left">
+            <p>
+              Hiển thị
+              <span style="color: #6449e7; font-weight: 600;">1-15 / 69</span>
+              danh sách
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile is-ancestor single-listing">
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            <div class="content-shell">
+              <div class="listing listing-100">
+                <div class="listing-content">
+                  <div class="listing-heading">
+                    <h3>
+                      <span class="tag is-warning">Nổi bật</span>
+                      <span class="tag is-success">Thông tin</span>
+                    </h3>
+                  </div>
+                  <div class="listing-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Animi, laborum.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="listing-bgimg"
+                  style="
+                    background-image: url('./assets/listings/img/product/garnet.jpg');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-4 is-parent">
+          <div class="tile is-child">
+            <div class="property-title-box">
+              <h4><a href="#"> Red Garnet</a></h4>
+              <div class="product-rating">
+                <ul>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-3 is-parent">
+          <div class="tile is-child">
+            <div class="property-action">
+              <p>
+                <span class="per_sale">Đánh giá &nbsp;:&nbsp;</span
+                ><span class="price">100$</span>
+              </p>
+              <button class="button">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile is-ancestor single-listing">
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            <div class="content-shell">
+              <div class="listing listing-100">
+                <div class="listing-content">
+                  <div class="listing-heading">
+                    <!-- <h3><span class="tag is-warning">Featured</span> -->
+                    <h3><span class="tag is-success">Thông tin</span></h3>
+                  </div>
+                  <div class="listing-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Animi, laborum.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="listing-bgimg"
+                  style="
+                    background-image: url('./assets/listings/img/product/agatejpg.jpg');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-4 is-parent">
+          <div class="tile is-child">
+            <div class="property-title-box">
+              <h4><a href="#">Đá Agate</a></h4>
+              </ul>
+              <div class="product-rating">
+                <ul>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-3 is-parent">
+          <div class="tile is-child">
+            <div class="property-action">
+              <p>
+                <span class="per_sale">Giá &nbsp;:&nbsp;</span
+                ><span class="price">$750</span>
+              </p>
+              <button class="button">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile is-ancestor single-listing">
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            <div class="content-shell">
+              <div class="listing listing-100">
+                <div class="listing-content">
+                  <div class="listing-heading">
+                    <h3>
+                      <span class="tag is-warning">New</span>
+                      <span class="tag is-success">For Sale</span>
+                    </h3>
+                  </div>
+                  <div class="listing-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Animi, laborum. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Animi, laborum.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="listing-bgimg"
+                  style="
+                    background-image: url('./assets/listings/img/product/diamond.jpg');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-4 is-parent">
+          <div class="tile is-child">
+            <div class="property-title-box">
+              <h4><a href="#">Kim Cương</a></h4>
+              <div class="product-rating">
+                <ul>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-3 is-parent">
+          <div class="tile is-child">
+            <div class="property-action">
+              <p>
+                <span class="per_sale">Giá &nbsp;:&nbsp;</span
+                ><span class="price">$1050</span>
+              </p>
+              <button class="button">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile is-ancestor single-listing">
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            <div class="content-shell">
+              <div class="listing listing-100">
+                <div class="listing-content">
+                  <div class="listing-heading">
+                    <h3>
+                      <span class="tag is-warning">Sản phẩm mới</span>
+                      <span class="tag is-success">Thông Tin</span>
+                    </h3>
+                  </div>
+                  <div class="listing-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Animi, laborum. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Animi, laborum.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="listing-bgimg"
+                  style="
+                    background-image: url('./assets/listings/img/product/diamond-yellow.jpg');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-4 is-parent">
+          <div class="tile is-child">
+            <div class="property-title-box">
+              <h4><a href="#">Cặp nhẫn Kim Cương Vàng</a></h4>
+              <div class="product-rating">
+                <ul>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-3 is-parent">
+          <div class="tile is-child">
+            <div class="property-action">
+              <p>
+                <span class="per_sale">Giá &nbsp;:&nbsp;</span
+                ><span class="price">$1400</span>
+              </p>
+              <button class="button">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile is-ancestor single-listing">
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            <div class="content-shell">
+              <div class="listing listing-100">
+                <div class="listing-content">
+                  <div class="listing-heading">
+                    <h3>
+                      <span class="tag is-warning">Nổi bật</span>
+                      <span class="tag is-success">Thông tin</span>
+                    </h3>
+                  </div>
+                  <div class="listing-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Animi, laborum.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="listing-bgimg"
+                  style="
+                    background-image: url('./assets/listings/img/product/amethyst.jpg');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-4 is-parent">
+          <div class="tile is-child">
+            <div class="property-title-box">
+              <h4><a href="#"> Nhẫn đá Amethyst</a></h4>
+              <div class="product-rating">
+                <ul>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-3 is-parent">
+          <div class="tile is-child">
+            <div class="property-action">
+              <p>
+                <span class="per_sale">Giá &nbsp;:&nbsp;</span
+                ><span class="price">500$</span>
+              </p>
+              <button class="button">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile is-ancestor single-listing">
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            <div class="content-shell">
+              <div class="listing listing-100">
+                <div class="listing-content">
+                  <div class="listing-heading">
+                    <h3>
+                      <span class="tag is-warning">Sản phẩm mới</span>
+                      <span class="tag is-success">Thông Tin</span>
+                    </h3>
+                  </div>
+                  <div class="listing-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Animi, laborum. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Animi, laborum.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="listing-bgimg"
+                  style="
+                    background-image: url('./assets/listings/img/product/bracelet.jpg');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-4 is-parent">
+          <div class="tile is-child">
+            <div class="property-title-box">
+              <h4><a href="#">Vòng tay</a></h4>
+              <div class="product-rating">
+                <ul>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-3 is-parent">
+          <div class="tile is-child">
+            <div class="property-action">
+              <p>
+                <span class="per_sale">Giá &nbsp;:&nbsp;</span
+                ><span class="price">$500</span>
+              </p>
+              <button class="button">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile is-ancestor single-listing">
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            <div class="content-shell">
+              <div class="listing listing-100">
+                <div class="listing-content">
+                  <div class="listing-heading">
+                    <h3>
+                      <span class="tag is-warning">Sản phẩm mới</span>
+                      <span class="tag is-success">Thông Tin</span>
+                    </h3>
+                  </div>
+                  <div class="listing-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Animi, laborum. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Animi, laborum.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="listing-bgimg"
+                  style="
+                    background-image: url('./assets/listings/img/product/gem1.jpg');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-4 is-parent">
+          <div class="tile is-child">
+            <div class="property-title-box">
+              <h4><a href="#">Ruby đỏ</a></h4>
+              <div class="product-rating">
+                <ul>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-3 is-parent">
+          <div class="tile is-child">
+            <div class="property-action">
+              <p>
+                <span class="per_sale">Giá &nbsp;:&nbsp;</span
+                ><span class="price">$1400</span>
+              </p>
+              <button class="button">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile is-ancestor single-listing">
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            <div class="content-shell">
+              <div class="listing listing-100">
+                <div class="listing-content">
+                  <div class="listing-heading">
+                    <h3><span class="tag is-success">Thông tin</span></h3>
+                  </div>
+                  <div class="listing-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Animi, laborum. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Animi, laborum.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="listing-bgimg"
+                  style="
+                    background-image: url('./assets/listings/img/product/labradorite.jpg');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-4 is-parent">
+          <div class="tile is-child">
+            <div class="property-title-box">
+              <h4><a href="#">Đá Labradorite</a></h4>
+              <div class="product-rating">
+                <ul>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-3 is-parent">
+          <div class="tile is-child">
+            <div class="property-action">
+              <p>
+                <span class="per_sale">Giá &nbsp;:&nbsp;</span
+                ><span class="price">$230</span>
+              </p>
+              <button class="button">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile is-ancestor single-listing">
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            <div class="content-shell">
+              <div class="listing listing-100">
+                <div class="listing-content">
+                  <div class="listing-heading">
+                    <h3>
+                      <span class="tag is-warning">Sản Phẩm Mới</span>
+                      <span class="tag is-success">Thông tin</span>
+                    </h3>
+                  </div>
+                  <div class="listing-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Animi, laborum. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Animi, laborum.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="listing-bgimg"
+                  style="
+                    background-image: url('./assets/listings/img/product/quartz.jpg');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-4 is-parent">
+          <div class="tile is-child">
+            <div class="property-title-box">
+              <h4><a href="#">Vòng tay đá Quartz</a></h4>
+
+              <div class="product-rating">
+                <ul>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-3 is-parent">
+          <div class="tile is-child">
+            <div class="property-action">
+              <p>
+                <span class="per_sale">Giá &nbsp;:&nbsp;</span
+                ><span class="price">$700</span>
+              </p>
+              <button class="button">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile is-ancestor single-listing">
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            <div class="content-shell">
+              <div class="listing listing-100">
+                <div class="listing-content">
+                  <div class="listing-heading">
+                    <h3>
+                      <span class="tag is-warning">Nổi bật</span>
+                      <span class="tag is-success">Thông Tin</span>
+                    </h3>
+                  </div>
+                  <div class="listing-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Animi, laborum. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Animi, laborum.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="listing-bgimg"
+                  style="
+                    background-image: url('./assets/listings/img/product/sapphire.jpg');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-4 is-parent">
+          <div class="tile is-child">
+            <div class="property-title-box">
+              <h4><a href="#">Đá Sapphire</a></h4>
+              <div class="product-rating">
+                <ul>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-3 is-parent">
+          <div class="tile is-child">
+            <div class="property-action">
+              <p>
+                <span class="per_sale">Giá &nbsp;:&nbsp;</span
+                ><span class="price">$520</span>
+              </p>
+              <button class="button">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile is-ancestor single-listing">
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            <div class="content-shell">
+              <div class="listing listing-100">
+                <div class="listing-content">
+                  <div class="listing-heading">
+                    <h3>
+                      <span class="tag is-warning">Sản phẩm mới</span>
+                      <span class="tag is-success">Thông Tin</span>
+                    </h3>
+                  </div>
+                  <div class="listing-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Animi, laborum. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Animi, laborum.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="listing-bgimg"
+                  style="
+                    background-image: url('./assets/listings/img/product/quartz1.jpg');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-4 is-parent">
+          <div class="tile is-child">
+            <div class="property-title-box">
+              <h4><a href="#">Nhẫn đã Quart hồng</a></h4>
+              <div class="product-rating">
+                <ul>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-3 is-parent">
+          <div class="tile is-child">
+            <div class="property-action">
+              <p>
+                <span class="per_sale">Giá &nbsp;:&nbsp;</span
+                ><span class="price">$1400</span>
+              </p>
+              <button class="button">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile is-ancestor single-listing">
+        <div class="tile is-parent">
+          <div class="tile is-child">
+            <div class="content-shell">
+              <div class="listing listing-100">
+                <div class="listing-content">
+                  <div class="listing-heading">
+                    <h3>
+                      <span class="tag is-warning">Nổi bật</span>
+                      <span class="tag is-success">Thông Tin</span>
+                    </h3>
+                  </div>
+                  <div class="listing-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Animi, laborum. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Animi, laborum.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="listing-bgimg"
+                  style="
+                    background-image: url('./assets/listings/img/product/ruby.jpg');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-4 is-parent">
+          <div class="tile is-child">
+            <div class="property-title-box">
+              <h4><a href="#">Nhẫn ruby hồng</a></h4>
+
+              <div class="product-rating">
+                <ul>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                  <li><i class="fa fa-star-half-alt"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-3 is-parent">
+          <div class="tile is-child">
+            <div class="property-action">
+              <p>
+                <span class="per_sale">Giá &nbsp;:&nbsp;</span
+                ><span class="price">$450</span>
+              </p>
+              <button class="button">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="pagination is-centered" aria-label="pagination">
+        <a class="pagination-previous">Trang sau</a>
+        <a class="pagination-next">Trang trước</a>
+        <ul class="pagination-list">
+          <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+          <li>
+            <a
+              class="pagination-link is-current"
+              aria-label="Page 46"
+              aria-current="page"
+              >46</a
+            >
+          </li>
+          <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Kết thúc listings -->
+
+    <footer class="footer has-background-white-ter" id="my-footer">
+      <div class="content has-text-centered has-text-white">
+        <div class="columns is-offset-1">
+          <div class="column">
+            <a href="#" class="footer-logo animoBorderLeftRight">
+              <img
+                src="./assets/logo/gem2.png"
+                alt="Bulma: a modern CSS framework based on Flexbox"
+                width="112"
+                height="28"
+              />
+            </a>
+            <p class="has-text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="column">
+            <h6>Tìm kiếm nhiều</h6>
+            <ul>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Thông tin sản phẩm</a>
+              </li>
+              <li>
+                <a href="#" class="animoBorderLeftRight"> Đánh giá tốt</a>
+              </li> 
+              <li>
+                <a href="#" class="animoBorderLeftRight">Sản phẩm mua nhiều</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h6>Liên hệ nhanh</h6>
+            <ul>
+              <li><a href="#" class="animoBorderLeftRight">Giới thiệu</a></li>
+              <li><a href="#" class="animoBorderLeftRight">Contact us</a></li>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Chính sách</a>
+              </li>
+              <li><a href="#" class="animoBorderLeftRight">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h6>Đăng Kí</h6>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-medium" type="email" placeholder="Email" />
+              <span class="icon is-left">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </div>
+            <button class="animoPulse">
+              <span>Subcribe</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/listings/js/scripts.js"></script>
+  </body>
+</html>

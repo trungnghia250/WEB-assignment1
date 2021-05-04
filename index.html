@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo-hcmga.jpg" type="image/ico">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <title>Main page</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light fixed-top navbar-expand-md" id="myScrollspy">
+        <div class="container">
+            <button type="button" id="navbar-toggler" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="background-color: white;">
+                ☰
+            </button>
+            <a class="navbar-brand nav-link" href="index.html"><img style="height: 30px; border-radius: 50%; margin-right: 5px;" alt="" src="logo-hcmga.jpg">Chi hội đá quý HCM</a>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">Về chúng tôi</a>
+                    </li>
+
+                    <li class="dropdown nav-item news_dropdown1">
+                        <a href="#news" class="dropdown-toggle nav-link" data-hover="dropdown" role="button" aria-expanded="false">
+                            Tin Tức &amp; Sự Kiện <span class="caret"></span>
+                        </a>
+                    </li>
+
+
+                    <li class="dropdown nav-item news_dropdown1">
+                        <a href="./contact.html"  data-hover="dropdown" role="button" aria-expanded="false">
+                             Liên hệ <span class="caret"></span>
+                        </a>
+
+                    <li class="dropdown nav-item news_dropdown1">
+                        <a href="./listings.html" class="dropdown-toggle nav-link" data-hover="dropdown" role="button" aria-expanded="false">
+                            Thông tin sản phẩm <span class="caret"></span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown nav-item news_dropdown1">
+                        <a href="#member" class="dropdown-toggle nav-link" data-hover="dropdown" role="button" aria-expanded="false">
+                            Thành viên <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdownhover-bottom" role="menu" id="member_ul">
+                            <li class="dropdown-item"><a href="#login">Đăng nhập</a></li>
+                            <li class="dropdown-item"><a href="#signup">Đăng ký</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+        $(function() {
+            var navbar = $(".navbar");
+            var navDropdown = $(".dropdown-menu");
+
+            $(window).scroll(function() {
+                if ($(window).scrollTop() <= 40) {
+                    if (!$(".navbar-collapse").hasClass("show")) {
+                        navbar.removeClass("navbar-scroll");
+                        navDropdown.removeClass("nav-dropdown-scroll");
+                        $(".top").hide();
+                    }
+                } else {
+                    navbar.addClass("navbar-scroll");
+                    navDropdown.addClass("nav-dropdown-scroll");
+                    $(".top").show();
+                }
+            });
+            $(".navbar-toggler").click(function() {
+                if ($(window).scrollTop() <= 40) {
+                    navbar.addClass("navbar-scroll");
+                }
+            });
+        });
+    </script>
+
+
+    <div class="swiper-container swiper-container-fade swiper-container-initialized swiper-container-horizontal">
+        <div class="swiper-wrapper" id="swiper-wrapper-10f4754f01057e1d8c" aria-live="off" style="transition: all 0ms ease 0s;">
+
+            <div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="3" role="group" style="width: 885px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition: all 0ms ease 0s;">
+                <div class="carouselContainer">
+                    <img src="cover1_6.jpg" alt="">
+                    <div class="jumbotron jumbotron-fluid">
+                        <h1 class="display-4">CÁC LOẠI OPAL</h1>
+                        <p class="lead">
+                            Cấu trúc bên trong của opal quý làm cho nó nhiễu xạ ánh sáng; tùy thuộc vào điều kiện hình thành mà có thể đem lại nhiều màu sắc rực rõ khác nhau. </p>
+                        <a class="btn btn-warning btn-lg" href="#" role="button">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" style="width: 885px; opacity: 1; transform: translate3d(-885px, 0px, 0px); transition: all 0ms ease 0s;">
+                <div class="carouselContainer">
+                    <img src="cover2_6.jpg" alt="">
+                    <div class="jumbotron jumbotron-fluid">
+                        <h1 class="display-4">RUBY VÀ HIỆU ỨNG SAO</h1>
+                        <p class="lead">
+                            Các bao thể rutil hình kim trong ruby tạo ra hiệu ứng sao, đây là một ví dụ về tạp chất làm tăng giá trị của một viên đá quý. </p>
+                        <a class="btn btn-warning btn-lg" href="#" role="button">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide" data-swiper-slide-index="1" role="group" style="width: 885px; opacity: 1; transform: translate3d(-1770px, 0px, 0px); transition: all 0ms ease 0s;">
+                <div class="carouselContainer">
+                    <img src="cover3_6.jpg" alt="">
+                    <div class="jumbotron jumbotron-fluid">
+                        <h1 class="display-4">Viên kim cương màu hồng tím cực hiếm của Nga được bán đấu giá 26.6 triệu đô la</h1>
+                        <p class="lead">
+                            Viên kim cương nặng 14,8 carat, là viên lớn nhất cùng loại đã được đấu giá </p>
+                        <a class="btn btn-warning btn-lg" href="#" role="button">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="4 / 6" style="width: 885px; opacity: 1; transform: translate3d(-2655px, 0px, 0px); transition: all 0ms ease 0s;">
+                <div class="carouselContainer">
+                    <img src="cover4_6.jpg" alt="">
+                    <div class="jumbotron jumbotron-fluid">
+                        <h1 class="display-4">GIỚI THIỆU VỀ MỘT SỐ LOẠI MÃ NÃO</h1>
+                        <p class="lead">
+                            Khó có thể liệt kê đầy đủ tất cả các tên khác nhau cho các biến thể đá Mã não, bởi có tới hàng trăm tên cũ và các tên mới được đặt ra thường… </p>
+                        <a class="btn btn-warning btn-lg" href="#" role="button">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="3" role="group" aria-label="5 / 6" style="width: 885px; opacity: 1; transform: translate3d(-3540px, 0px, 0px); transition: all 0ms ease 0s;">
+                <div class="carouselContainer">
+                    <img src="cover1_6.jpg" alt="">
+                    <div class="jumbotron jumbotron-fluid">
+                        <h1 class="display-4">CÁC LOẠI OPAL</h1>
+                        <p class="lead">
+                            Cấu trúc bên trong của opal quý làm cho nó nhiễu xạ ánh sáng; tùy thuộc vào điều kiện hình thành mà có thể đem lại nhiều màu sắc rực rõ khác nhau. </p>
+                        <a class="btn btn-warning btn-lg" href="#" role="button">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="6 / 6" style="width: 885px; opacity: 1; transform: translate3d(-4425px, 0px, 0px); transition: all 0ms ease 0s;">
+                <div class="carouselContainer">
+                    <img src="cover2_6.jpg" alt="">
+                    <div class="jumbotron jumbotron-fluid">
+                        <h1 class="display-4">RUBY VÀ HIỆU ỨNG SAO</h1>
+                        <p class="lead">
+                            Các bao thể rutil hình kim trong ruby tạo ra hiệu ứng sao, đây là một ví dụ về tạp chất làm tăng giá trị của một viên đá quý. </p>
+                        <a class="btn btn-warning btn-lg" href="#" role="button">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"></span>
+            <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
+            <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
+            <span class="swiper-pagination-bullet" tabindex="0" role="button"></span></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center heading" style="padding: 80px 0px 30px 0px;">Tin tức &amp; Sự kiện</h2>
+    </div>
+
+    <div class="swiper-container-1 container swiper-container-initialized swiper-container-horizontal">
+        <div class="swiper-wrapper" id="swiper-wrapper-c046a3afb55257df" aria-live="polite" style="transition: all 0ms ease 0s; transform: translate3d(-2875px, 0px, 0px);">
+            <div class="swiper-slide swiper-slide-duplicate" style="width: auto; margin-right: 20px;" data-swiper-slide-index="1" role="group">
+                <div class="news-container">
+                    <div class="post-module">
+
+                        <div class="thumbnail">
+                            <div class="date">
+                                <div class="day">19</div>
+                                <div class="month">Oct</div>
+                            </div><img src="news/1.jpg" alt="">
+                        </div>
+
+                        <div class="post-content">
+                            <div class="category">Tin tức</div>
+                            <h2 class="title"><a style="text-decoration: none; color: black" href="#">Tinh đám thạch anh
+                                    lớn nhất thế giới</a></h2>
+                            <p class="description">Đây là cụm thạch anh lớn nhất thế giới, được phát hiện vào năm 1985 ở Namibia.
+                            </p>
+                            <div class="post-meta">
+                                <span class="comments"><i class="fa fa-comments"></i><a href="#"> 0 bình luận</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-duplicate" style="width: auto; margin-right: 20px;" data-swiper-slide-index="2" role="group" aria-label="2 / 13">
+                <div class="news-container">
+
+                    <div class="post-module">
+
+                        <div class="thumbnail">
+                            <div class="date">
+                                <div class="day">18</div>
+                                <div class="month">Oct</div>
+                            </div><img src="news/2.jpg" alt="">
+                        </div>
+
+                        <div class="post-content">
+                            <div class="category">Tin tức</div>
+                            <h2 class="title"><a style="text-decoration: none; color: black" href="#">MỚI PHÁT HIỆN NĂM
+                                    VIÊN KIM CƯƠNG XANH QUÝ HIẾM TẠI MỎ CULLINAN</a></h2>
+                            <p class="description">Năm viên kim cương xanh, có màu sắc và độ trong sáng chất lượng cao mới được tìm thấy tháng 9 năm 2020 tại mỏ Cullinan, Nam Phi</p>
+                            <div class="post-meta">
+                                <span class="comments"><i class="fa fa-comments"></i><a href="#"> 0 bình luận</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" style="width: auto; margin-right: 20px;" data-swiper-slide-index="3" role="group" aria-label="3 / 13">
+                <div class="news-container">
+
+                    <div class="post-module">
+
+                        <div class="thumbnail">
+                            <div class="date">
+                                <div class="day">15</div>
+                                <div class="month">Oct</div>
+                            </div><img src="news/3.jpg" alt="">
+                        </div>
+
+                        <div class="post-content">
+                            <div class="category">Tin tức</div>
+                            <h2 class="title"><a style="text-decoration: none; color: black" href="#">Tổng kết hoạt động
+                                    Chi hội đá quý TP. HCM năm 2016</a></h2>
+                            <p class="description" style="display: none;">Chi hội đá quý thành phố Hồ Chí Minh thành lập &amp; Đại hội chính thức vào ngày 30/01/2016.</p>
+                            <div class="post-meta">
+                                <span class="comments"><i class="fa fa-comments"></i><a href="#"> 0 bình luận</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" style="width: auto; margin-right: 20px;" data-swiper-slide-index="4" role="group" aria-label="4 / 13">
+                <div class="news-container">
+
+                    <div class="post-module">
+
+                        <div class="thumbnail">
+                            <div class="date">
+                                <div class="day">30</div>
+                                <div class="month">Aug</div>
+                            </div><img src="news/4.jpg" alt="">
+                        </div>
+
+                        <div class="post-content">
+                            <div class="category">Tin tức</div>
+                            <h2 class="title"><a style="text-decoration: none; color: black" href="#">THÔNG BÁO: MỞ LỚP
+                                    BỒI DƯỠNG KIẾN THỨC CƠ BẢN VỀ ĐÁ QUÝ</a></h2>
+                            <p class="description" style="display: none;">Mở lớp bồi dưỡng kiên thức cơ bản về đá quý
+                            </p>
+                            <div class="post-meta">
+                                <span class="comments"><i class="fa fa-comments"></i><a href="#"> 0 bình luận</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide swiper-slide-duplicate-next" style="width: auto; margin-right: 20px;" data-swiper-slide-index="0" role="group" aria-label="5 / 13">
+                <div class="news-container">
+
+                    <div class="post-module">
+
+                        <div class="thumbnail">
+                            <div class="date">
+                                <div class="day">13</div>
+                                <div class="month">Nov</div>
+                            </div><img src="news/5.jpg" alt="">
+                        </div>
+
+                        <div class="post-content">
+                            <div class="category">Tin tức</div>
+                            <h2 class="title"><a style="text-decoration: none; color: black" href="#">Viên kim cương màu
+                                    hồng tím cực hiếm của Nga được bán đấu giá 26.6 triệu đô la</a></h2>
+                            <p class="description" style="display: none; height: 50px; opacity: 1;">Viên kim cương nặng 14,8 carat, là viên lớn nhất cùng loại đã được đấu giá</p>
+                            <div class="post-meta">
+                                <span class="comments"><i class="fa fa-comments"></i><a href="#"> 0 bình luận</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide" style="width: auto; margin-right: 20px;" data-swiper-slide-index="1" role="group" aria-label="6 / 13">
+                <div class="news-container">
+
+                    <div class="post-module">
+
+                        <div class="thumbnail">
+                            <div class="date">
+                                <div class="day">19</div>
+                                <div class="month">Oct</div>
+                            </div><img src="news/1.jpg" alt="">
+                        </div>
+
+                        <div class="post-content">
+                            <div class="category">Tin tức</div>
+                            <h2 class="title"><a style="text-decoration: none; color: black" href="#">Tinh đám thạch anh
+                                    lớn nhất thế giới</a></h2>
+                            <p class="description" style="display: none; height: 50px; opacity: 1;">Đây là cụm thạch anh lớn nhất thế giới, được phát hiện vào năm 1985 ở Namibia.</p>
+                            <div class="post-meta">
+                                <span class="comments"><i class="fa fa-comments"></i><a href="#"> 0 bình luận</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide" style="width: auto; margin-right: 20px;" data-swiper-slide-index="2" role="group" aria-label="7 / 13">
+                <div class="news-container">
+
+                    <div class="post-module">
+
+                        <div class="thumbnail">
+                            <div class="date">
+                                <div class="day">18</div>
+                                <div class="month">Oct</div>
+                            </div><img src="news/2.jpg" alt="">
+                        </div>
+
+                        <div class="post-content">
+                            <div class="category">Tin tức</div>
+                            <h2 class="title"><a style="text-decoration: none; color: black" href="#">MỚI PHÁT HIỆN NĂM
+                                    VIÊN KIM CƯƠNG XANH QUÝ HIẾM TẠI MỎ CULLINAN</a></h2>
+                            <p class="description">Năm viên kim cương xanh, có màu sắc và độ trong sáng chất lượng cao mới được tìm thấy tháng 9 năm 2020 tại mỏ Cullinan, Nam Phi</p>
+                            <div class="post-meta">
+                                <span class="comments"><i class="fa fa-comments"></i><a href="#"> 0 bình luận</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide swiper-slide-prev" style="width: auto; margin-right: 20px;" data-swiper-slide-index="3" role="group">
+                <div class="news-container">
+
+                    <div class="post-module">
+
+                        <div class="thumbnail">
+                            <div class="date">
+                                <div class="day">15</div>
+                                <div class="month">Oct</div>
+                            </div><img src="news/3.jpg" alt="">
+                        </div>
+
+                        <div class="post-content">
+                            <div class="category">Tin tức</div>
+                            <h2 class="title"><a style="text-decoration: none; color: black" href="#">Tổng kết hoạt động
+                                    Chi hội đá quý TP. HCM năm 2016</a></h2>
+                            <p class="description" style="display: none; height: 75px; opacity: 1;">Chi hội đá quý thành phố Hồ Chí Minh thành lập &amp; Đại hội chính thức vào ngày 30/01/2016.</p>
+                            <div class="post-meta">
+                                <span class="comments"><i class="fa fa-comments"></i><a href="#"> 0 bình luận</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide swiper-slide-active" style="width: auto; margin-right: 20px;" data-swiper-slide-index="4" role="group">
+                <div class="news-container">
+
+                    <div class="post-module">
+
+                        <div class="thumbnail">
+                            <div class="date">
+                                <div class="day">30</div>
+                                <div class="month">Aug</div>
+                            </div><img src="news/4.jpg" alt="">
+                        </div>
+
+                        <div class="post-content">
+                            <div class="category">Tin tức</div>
+                            <h2 class="title"><a style="text-decoration: none; color: black" href="#">THÔNG BÁO: MỞ LỚP
+                                    BỒI DƯỠNG KIẾN THỨC CƠ BẢN VỀ ĐÁ QUÝ</a></h2>
+                            <p class="description" style="display: none; height: 50px; opacity: 1;">Mở lớp bồi dưỡng kiến thức cơ bản về đá quý</p>
+                            <div class="post-meta">
+                                <span class="comments"><i class="fa fa-comments"></i><a href="#"> 0 bình luận</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" style="width: auto; margin-right: 20px;" data-swiper-slide-index="0" role="group">
+                <div class="news-container">
+
+                    <div class="post-module">
+
+                        <div class="thumbnail">
+                            <div class="date">
+                                <div class="day">13</div>
+                                <div class="month">Nov</div>
+                            </div><img src="news/5.jpg" alt="">
+                        </div>
+
+                        <div class="post-content">
+                            <div class="category">Tin tức</div>
+                            <h2 class="title"><a style="text-decoration: none; color: black" href="#">Viên kim cương màu
+                                    hồng tím cực hiếm của Nga được bán đấu giá 26.6 triệu đô la</a></h2>
+                            <p class="description">Viên kim cương nặng 14,8 carat, là viên lớn nhất cùng loại đã được đấu giá</p>
+                            <div class="post-meta">
+                                <span class="comments"><i class="fa fa-comments"></i><a href="#"> 0 bình luận</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-duplicate" style="width: auto; margin-right: 20px;" data-swiper-slide-index="1" role="group">
+                <div class="news-container">
+
+                    <div class="post-module">
+
+                        <div class="thumbnail">
+                            <div class="date">
+                                <div class="day">19</div>
+                                <div class="month">Oct</div>
+                            </div><img src="news/1.jpg" alt="">
+                        </div>
+
+                        <div class="post-content">
+                            <div class="category">Tin tức</div>
+                            <h2 class="title"><a style="text-decoration: none; color: black" href="#">Tinh đám thạch anh
+                                    lớn nhất thế giới</a></h2>
+                            <p class="description">Đây là cụm thạch anh lớn nhất thế giới, được phát hiện vào năm 1985 ở Namibia.
+                            </p>
+                            <div class="post-meta">
+                                <span class="comments"><i class="fa fa-comments"></i><a href="#"> 0 bình luận</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-duplicate" style="width: auto; margin-right: 20px;" data-swiper-slide-index="2" role="group">
+                <div class="news-container">
+
+                    <div class="post-module">
+
+                        <div class="thumbnail">
+                            <div class="date">
+                                <div class="day">18</div>
+                                <div class="month">Oct</div>
+                            </div><img src="news/2.jpg" alt="">
+                        </div>
+
+                        <div class="post-content">
+                            <div class="category">Tin tức</div>
+                            <h2 class="title"><a style="text-decoration: none; color: black" href="#">MỚI PHÁT HIỆN NĂM
+                                    VIÊN KIM CƯƠNG XANH QUÝ HIẾM TẠI MỎ CULLINAN</a></h2>
+                            <p class="description">Năm viên kim cương xanh, có màu sắc và độ trong sáng chất lượng cao mới được tìm thấy tháng 9 năm 2020 tại mỏ Cullinan, Nam Phi</p>
+                            <div class="post-meta">
+                                <span class="comments"><i class="fa fa-comments"></i><a href="#"> 0 bình luận</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="swiper-pagination-1 swiper-pagination-clickable swiper-pagination-bullets">
+            <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
+            <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
+            <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
+            <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
+            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"></span>
+        </div>
+
+        <a href="#" class="btn btn-warning">Xem thêm</a>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+
+    <div class="learn learn-connect-cards container">
+        <h2 class="text-center heading" style="padding: 80px 0px 30px 0px;">Kiến thức</h2>
+        <div class="row">
+
+            <div class="col-lg col-md-6">
+                <a href="#">
+                    <div class="card">
+                        <span class="icon"><i class="fas fa-microscope"></i></span>
+                        <p class="card-title">ĐÁ QUÝ</p>
+                        <p class="card-text">Tìm hiểu thêm</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg col-md-6">
+                <a href="#">
+                    <div class="card">
+                        <span class="icon"><i class="fas fa-microscope"></i></span>
+                        <p class="card-title">ĐÁ BÁN QUÝ</p>
+                        <p class="card-text">Tìm hiểu thêm</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg col-md-6">
+                <a href="#">
+                    <div class="card">
+                        <span class="icon"><i class="fas fa-microscope"></i></span>
+                        <p class="card-title">ĐÁ NGỌC</p>
+                        <p class="card-text">Tìm hiểu thêm</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg col-md-6">
+                <a href="#">
+                    <div class="card">
+                        <span class="icon"><i class="fas fa-microscope"></i></span>
+                        <p class="card-title">ĐÁ PHONG THUỶ</p>
+                        <p class="card-text">Tìm hiểu thêm</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="text-center mt-5"><a href="#research" class="btn btn-danger">Xem thêm</a></div>
+    </div>
+
+    <div class="parallax">
+        <div class="featured-gem">
+            <h2 class="text-center heading" style="padding: 30px;">Bộ sưu tập</h2>
+
+            <div class="swiper-container-1 container swiper-container-initialized swiper-container-horizontal">
+                <div class="swiper-wrapper" id="swiper-wrapper-4246a524f9c4957b" aria-live="polite" style="transition: all 0ms ease 0s; transform: translate3d(-1355px, 0px, 0px);">
+                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" style="width: auto; margin-right: 20px;" data-swiper-slide-index="1" role="group">
+                        <div class="news-container">
+                            <!-- Post-->
+                            <div class="post-module">
+                                <!-- Thumbnail-->
+                                <div class="thumbnail">
+                                    <div class="date">
+                                        <div class="day">Mới</div>
+                                    </div><img src="collection/1.jpg" alt="">
+                                </div>
+                                <!-- Post Content-->
+                                <div class="post-content">
+                                    <div class="category">Sản phẩm</div>
+                                    <h2 class="title"><a style="text-decoration: none; color: black" href="#">Ruby - Đá
+                                            Hồng Ngọc </a></h2>
+                                    <p class="description"><b>Mã sản phẩm:&nbsp;5f8cfad8803e8</b></p>
+                                    <p class="description">
+                                        Xuất xứ: Châu Phi <br> Màu sắc: Đỏ hồng ánh tím <br> Tình trạng: Còn hàng </p>
+                                    <div class="post-meta">
+                                        <span class="comments"><i class="fas fa-eye"></i><a href="#">15</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" style="width: auto; margin-right: 20px;" data-swiper-slide-index="2" role="group">
+                        <div class="news-container">
+                            <!-- Post-->
+                            <div class="post-module">
+                                <!-- Thumbnail-->
+                                <div class="thumbnail">
+                                    <div class="date">
+                                        <div class="day">Mới</div>
+                                    </div><img src="collection/2.jpg" alt="">
+                                </div>
+                                <!-- Post Content-->
+                                <div class="post-content">
+                                    <div class="category">Sản phẩm</div>
+                                    <h2 class="title">
+                                        <a style="text-decoration: none; color: black" href="#">Sapphire - Lam Ngọc </a>
+                                    </h2>
+                                    <p class="description">
+                                        <b>Mã sản phẩm:&nbsp;5f8cfa5c6e2a5</b>
+                                    </p>
+                                    <p class="description">
+                                        Xuất xứ: Châu Phi <br> Màu sắc: Xanh đen phớt vàng <br> Tình trạng: Còn hàng
+                                    </p>
+                                    <div class="post-meta">
+                                        <span class="comments"><i class="fas fa-eye"></i><a href="#">6</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" style="width: auto; margin-right: 20px;" data-swiper-slide-index="3" role="group">
+                        <div class="news-container">
+                            <!-- Post-->
+                            <div class="post-module">
+                                <!-- Thumbnail-->
+                                <div class="thumbnail">
+                                    <div class="date">
+                                        <div class="day">Mới</div>
+                                    </div><img src="collection/3.jpg" alt="">
+                                </div>
+                                <!-- Post Content-->
+                                <div class="post-content">
+                                    <div class="category">Sản phẩm</div>
+                                    <h2 class="title">
+                                        <a style="text-decoration: none; color: black" href="#">Morion - Thạch Anh Đen
+                                        </a>
+                                    </h2>
+                                    <p class="description">
+                                        <b>Mã sản phẩm:&nbsp;5f8cf9b56f4fb</b>
+                                    </p>
+                                    <p class="description">
+                                        Xuất xứ: Bảo Lộc <br> Màu sắc: Màu đen <br> Tình trạng: Còn hàng </p>
+                                    <div class="post-meta">
+                                        <span class="comments"><i class="fas fa-eye"></i><a href="#">18 </a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: auto; margin-right: 20px;" data-swiper-slide-index="4" role="group">
+                        <div class="news-container">
+
+                            <div class="post-module">
+
+                                <div class="thumbnail">
+                                    <div class="date">
+                                        <div class="day">Mới</div>
+                                    </div><img src="collection/4.jpg" alt="">
+                                </div>
+
+                                <div class="post-content">
+                                    <div class="category">Sản phẩm</div>
+                                    <h2 class="title">
+                                        <a style="text-decoration: none; color: black" href="#">Lapis Lazuli - Đá Thiên
+                                            Thanh </a>
+                                    </h2>
+                                    <p class="description" style="display: none;">
+                                        <b>Mã sản phẩm:&nbsp;5f8cf72e5e5b0</b>
+                                    </p>
+                                    <p class="description" style="display: none;">
+                                        Xuất xứ: Ấn Độ <br> Màu sắc: Xanh dương lốm đốm màu vàng kim <br> Tình trạng: Còn hàng </p>
+                                    <div class="post-meta">
+                                        <span class="comments"><i class="fas fa-eye"></i><a href="#">7</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-active" style="width: auto; margin-right: 20px;" data-swiper-slide-index="0" role="group">
+                        <div class="news-container">
+
+                            <div class="post-module">
+
+                                <div class="thumbnail">
+                                    <div class="date">
+                                        <div class="day">Mới</div>
+                                    </div><img src="collection/5.jpg" alt="">
+                                </div>
+
+                                <div class="post-content">
+                                    <div class="category">Sản phẩm</div>
+                                    <h2 class="title">
+                                        <a style="text-decoration: none; color: black" href="#">Agate - Mã Não </a>
+                                    </h2>
+                                    <p class="description" style="display: none; height: 25px; opacity: 1;">
+                                        <b>Mã sản phẩm:&nbsp;5f8cfb51e4461</b>
+                                    </p>
+                                    <p class="description" style="display: none; height: 75px; opacity: 1;">
+                                        Xuất xứ: Bảo Lộc - Việt Nam <br> Màu sắc: Màu nâu <br> Tình trạng: Còn hàng </p>
+                                    <div class="post-meta">
+                                        <span class="comments"><i class="fas fa-eye"></i><a href="#">44</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="swiper-slide" style="width: auto; margin-right: 20px;" data-swiper-slide-index="2" role="group">
+                        <div class="news-container">
+
+                            <div class="post-module">
+
+                                <div class="thumbnail">
+                                    <div class="date">
+                                        <div class="day">Mới</div>
+                                    </div><img src="collection/2.jpg" alt="">
+                                </div>
+
+                                <div class="post-content">
+                                    <div class="category">Sản phẩm</div>
+                                    <h2 class="title">
+                                        <a style="text-decoration: none; color: black" href="#">Sapphire - Lam Ngọc </a>
+                                    </h2>
+                                    <p class="description">
+                                        <b>Mã sản phẩm:&nbsp;5f8cfa5c6e2a5</b>
+                                    </p>
+                                    <p class="description">
+                                        Xuất xứ: Châu Phi <br> Màu sắc: Xanh đen phớt vàng <br> Tình trạng: Còn hàng
+                                    </p>
+                                    <div class="post-meta">
+                                        <span class="comments"><i class="fas fa-eye"></i><a href="#">6</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" style="width: auto; margin-right: 20px;" data-swiper-slide-index="3" role="group">
+                        <div class="news-container">
+
+                            <div class="post-module">
+
+                                <div class="thumbnail">
+                                    <div class="date">
+                                        <div class="day">Mới</div>
+                                    </div><img src="collection/3.jpg" alt="">
+                                </div>
+
+                                <div class="post-content">
+                                    <div class="category">Sản phẩm</div>
+                                    <h2 class="title">
+                                        <a style="text-decoration: none; color: black" href="#">Morion - Thạch Anh Đen
+                                        </a>
+                                    </h2>
+                                    <p class="description">
+                                        <b>Mã sản phẩm:&nbsp;5f8cf9b56f4fb</b>
+                                    </p>
+                                    <p class="description">
+                                        Xuất xứ: Bảo Lộc <br> Màu sắc: Màu đen <br> Tình trạng: Còn hàng </p>
+                                    <div class="post-meta">
+                                        <span class="comments"><i class="fas fa-eye"></i><a href="#">18 </a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-duplicate-prev" style="width: auto; margin-right: 20px;" data-swiper-slide-index="4" role="group">
+                        <div class="news-container">
+
+                            <div class="post-module">
+
+                                <div class="thumbnail">
+                                    <div class="date">
+                                        <div class="day">Mới</div>
+                                    </div><img src="collection/4.jpg" alt="">
+                                </div>
+
+                                <div class="post-content">
+                                    <div class="category">Sản phẩm</div>
+                                    <h2 class="title">
+                                        <a style="text-decoration: none; color: black" href="#">Lapis Lazuli - Đá Thiên
+                                            Thanh </a>
+                                    </h2>
+                                    <p class="description" style="display: none;">
+                                        <b>Mã sản phẩm:&nbsp;5f8cf72e5e5b0</b>
+                                    </p>
+                                    <p class="description" style="display: none;">
+                                        Xuất xứ: Ấn Độ <br> Màu sắc: Xanh dương lốm đốm màu vàng kim <br> Tình trạng: Còn hàng </p>
+                                    <div class="post-meta">
+                                        <span class="comments"><i class="fas fa-eye"></i><a href="#">7</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" style="width: auto; margin-right: 20px;" data-swiper-slide-index="0" role="group">
+                        <div class="news-container">
+
+                            <div class="post-module">
+
+                                <div class="thumbnail">
+                                    <div class="date">
+                                        <div class="day">Mới</div>
+                                    </div><img src="collection/5.jpg" alt="">
+                                </div>
+
+                                <div class="post-content">
+                                    <div class="category">Sản phẩm</div>
+                                    <h2 class="title">
+                                        <a style="text-decoration: none; color: black" href="#">Agate - Mã Não </a>
+                                    </h2>
+                                    <p class="description" style="display: none; height: 25px; opacity: 1;">
+                                        <b>Mã sản phẩm:&nbsp;5f8cfb51e4461</b>
+                                    </p>
+                                    <p class="description" style="display: none; height: 75px; opacity: 1;">
+                                        Xuất xứ: Bảo Lộc - Việt Nam <br> Màu sắc: Màu nâu <br> Tình trạng: Còn hàng </p>
+                                    <div class="post-meta">
+                                        <span class="comments"><i class="fas fa-eye"></i><a href="#">44</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" style="width: auto; margin-right: 20px;" data-swiper-slide-index="1" role="group">
+                        <div class="news-container">
+
+                            <div class="post-module">
+
+                                <div class="thumbnail">
+                                    <div class="date">
+                                        <div class="day">Mới</div>
+                                    </div><img src="collection/1.jpg" alt="">
+                                </div>
+
+                                <div class="post-content">
+                                    <div class="category">Sản phẩm</div>
+                                    <h2 class="title">
+                                        <a style="text-decoration: none; color: black" href="#">Ruby - Đá Hồng Ngọc </a>
+                                    </h2>
+                                    <p class="description">
+                                        <b>Mã sản phẩm:&nbsp;5f8cfad8803e8</b>
+                                    </p>
+                                    <p class="description">
+                                        Xuất xứ: Châu Phi <br> Màu sắc: Đỏ hồng ánh tím <br> Tình trạng: Còn hàng </p>
+                                    <div class="post-meta">
+                                        <span class="comments"><i class="fas fa-eye"></i><a href="#">15</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-duplicate" style="width: auto; margin-right: 20px;" data-swiper-slide-index="2" role="group">
+                        <div class="news-container">
+
+                            <div class="post-module">
+
+                                <div class="thumbnail">
+                                    <div class="date">
+                                        <div class="day">Mới</div>
+                                    </div><img src="collection/2.jpg" alt="">
+                                </div>
+
+                                <div class="post-content">
+                                    <div class="category">Sản phẩm</div>
+                                    <h2 class="title">
+                                        <a style="text-decoration: none; color: black" href="#">Sapphire - Lam Ngọc </a>
+                                    </h2>
+                                    <p class="description">
+                                        <b>Mã sản phẩm:&nbsp;5f8cfa5c6e2a5</b>
+                                    </p>
+                                    <p class="description">
+                                        Xuất xứ: Châu Phi <br> Màu sắc: Xanh đen phớt vàng <br> Tình trạng: Còn hàng
+                                    </p>
+                                    <div class="post-meta">
+                                        <span class="comments"><i class="fas fa-eye"></i><a href="#">6</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-duplicate" style="width: auto; margin-right: 20px;" data-swiper-slide-index="3" role="group" aria-label="13 / 13">
+                        <div class="news-container">
+
+                            <div class="post-module">
+
+                                <div class="thumbnail">
+                                    <div class="date">
+                                        <div class="day">Mới</div>
+                                    </div><img src="collection/3.jpg" alt="">
+                                </div>
+
+                                <div class="post-content">
+                                    <div class="category">Sản phẩm</div>
+                                    <h2 class="title">
+                                        <a style="text-decoration: none; color: black" href="#">Morion - Thạch Anh Đen
+                                        </a>
+                                    </h2>
+                                    <p class="description">
+                                        <b>Mã sản phẩm:&nbsp;5f8cf9b56f4fb</b>
+                                    </p>
+                                    <p class="description">
+                                        Xuất xứ: Bảo Lộc <br> Màu sắc: Màu đen <br> Tình trạng: Còn hàng </p>
+                                    <div class="post-meta">
+                                        <span class="comments"><i class="fas fa-eye"></i><a href="#">18 </a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-pagination-1 swiper-pagination-clickable swiper-pagination-bullets">
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"></span>
+                    <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
+                    <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
+                    <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
+                    <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
+                </div>
+
+                <a href="#category" class="btn btn-warning">Xem thêm</a>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="references container">
+        <h2 class="text-center heading" style="padding: 80px 0px 30px 0px;">Bài viết gần đây</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="grid__item">
+                    <div>
+                        <div class="card__img_ctn">
+                            <img class="card__img" src="recent/1.jpg" alt="">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__header text-center"> RUBY VÀ HIỆU ỨNG SAO </h2>
+                            <p class="card__text">Các bao thể rutil hình kim trong ruby tạo ra hiệu ứng sao, đây là ...
+                            </p>
+                            <a href="#" class="card__btn">Chi tiết <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="grid__item">
+                    <div>
+                        <div class="card__img_ctn">
+                            <img class="card__img" src="recent/2.jpg" alt="">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__header text-center">Viên kim cương màu hồng… </h2>
+                            <p class="card__text">Viên kim cương nặng 14,8 carat, là viên lớn nhất cùng loại đã được đấu ...
+                            </p>
+                            <a href="#" class="card__btn">Chi tiết <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="grid__item">
+                    <div>
+                        <div class="card__img_ctn">
+                            <img class="card__img" src="recent/3.jpg" alt="">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__header text-center">GIỚI THIỆU VỀ MỘT SỐ… </h2>
+                            <p class="card__text">Khó có thể liệt kê đầy đủ tất cả các tên khác nhau cho các ...</p>
+                            <a href="#" class="card__btn">Chi tiết <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="grid__item">
+                    <div>
+                        <div class="card__img_ctn">
+                            <img class="card__img" src="recent/4.jpg" alt="">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="card__header text-center">
+                                CÁC LOẠI OPAL </h2>
+                            <p class="card__text">Cấu trúc bên trong của opal quý làm cho nó nhiễu xạ ánh sáng; tùy ...
+                            </p>
+                            <a href="#" class="card__btn">Chi tiết <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 item text">
+                        <h3>CHI HỘI ĐÁ QUÝ HCM</h3>
+                        <p style="font-size: small;" class="text-justify">
+                            Chi Hội Đá Quý Thành Phố Hồ Chí Minh (HCMGA) trực thuộc Hội Đá Quý Việt Nam và Tổng Hội Địa Chất Việt Nam. Được thành lập vào ngày 30/01/2016. Với mong muốn tạo một sân chơi lành mạnh để những người chung ngành nghề, sở thích có thể giao lưu họp mặt và
+                            giúp đỡ lẫn nhau, thúc đẩy ngành đá quý phát triển.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-3 item">
+                        <h3>Liên kết</h3>
+                        <ul>
+                            <li><a href="./about.html">Về chúng tôi</a></li>
+                            <li><a href="#news">Tin Tức và Sự Kiện</a></li>
+                            <li><a href="#research">Kiến thức</a></li>
+                            <li><a href="#product">Bộ sưu tập</a></li>
+                            <li><a href="index.html">Trang chủ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 item text">
+                        <h3><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Địa chỉ</h3>
+                        <p style="font-size: small;"><a style="text-decoration: none; color: white" href="#" target="_blank">Số 2 Nguyễn Bỉnh Khiêm, phường Bến Nghé, Quận 1</a></p>
+
+                        <h3 style="margin-top: 10px;"><i class="far fa-envelope"></i>&nbsp;&nbsp;Email</h3>
+                        <p style="font-size: small;"><a style="text-decoration: none; color: white" href="#">company@mail.com.vn</a></p>
+
+                        <h3 style="margin-top: 10px;"><i class="far fa-envelope"></i>&nbsp;&nbsp;Điện thoại</h3>
+                        <p style="font-size: small;"><a style="text-decoration: none; color: white" href="#">0123.456.789</a></p>
+                    </div>
+                    <div class="col item social">
+                        <a href="#"><i class="icon ion-social-facebook"></i></a>
+                        <a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <a href="#"><i class="icon ion-social-twitter"></i></a>
+                        <a href="#"><i class="icon ion-social-linkedin"></i></a>
+                        <a href="#"><i class="icon ion-social-youtube"></i></a>
+                        <a href="#"><i class="icon ion-social-google"></i></a>
+                        <a href="#"><i class="icon ion-social-reddit"></i></a>
+                        <a href="#"><i class="icon ion-social-twitch"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/bootstrap-dropdownhover.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
